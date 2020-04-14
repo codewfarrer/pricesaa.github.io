@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PriceSaaS - Responsive Pricing Tables</title>
+    <!-- Default Bootstrap CSS file -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/light.css" rel="stylesheet">
+</head>
+<body>
+<!-- Head section -->
+<div class="head-section">
+    <div class="container">
+        <h1>Start for free, then pay as you go</h1>
+        <p>Trial period of <strong>14 days</strong> is available for all tariff plans</p>
+        <div class="custom-control custom-switch mt-5">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" onchange="togglePlane()">
+            <label class="custom-control-label" for="customSwitch1">View month price</label>
+        </div>
+    </div>
+</div>
+<!-- Plan section -->
+<div class="container">
+    <div class="price-group">
+        <div class="item">
+            <div class="price">
+                <div class="d-flex justify-content-start">
+                    <div class="price-icon">
+                        <i class="f7-icons">wand_stars</i>
+                    </div>
+                    <div>
+                        <h3>Free trial</h3>
+                        <p>Starting free tariff for new users</p>
+                        <div class="price-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">0.00</span>
+                            <span class="period" id="period">/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-price btn-free">Free forever</button>
+            <ul class="list-features">
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>A/B Testing analytics
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>Analytics writes
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>App Distribution
+                </li>
+            </ul>
+        </div>
+        <div class="item top-item">
+            <div class="price success-price">
+                <div class="d-flex justify-content-start">
+                    <div class="price-icon">
+                        <i class="f7-icons">sparkles</i>
+                    </div>
+                    <div>
+                        <h3>Spark plane</h3>
+                        <p>Full set of tools for any team</p>
+                        <div class="price-amount">
+                            <span class="currency">$</span>
+                            <span class="amount" id="amount2">100.90</span>
+                            <span class="period" id="period2">/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-price btn-pro">Get started</button>
+            <ul class="list-features">
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>A/B Testing analytics
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>Analytics writes
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>App Distribution
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>App Indexing invocations
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>Authentication transferred
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons success-price">checkmark</i>Multiple Network egress
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="price primary-price">
+                <div class="d-flex justify-content-start">
+                    <div class="price-icon">
+                        <i class="f7-icons">tornado</i>
+                    </div>
+                    <div>
+                        <h3>Storm plane</h3>
+                        <p>For large-scale projects</p>
+                        <div class="price-amount">
+                            <span class="currency">$</span>
+                            <span class="amount" id="amount3">870.90</span>
+                            <span class="period" id="period3">/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-price btn-enter">Get started</button>
+            <ul class="list-features">
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>A/B Testing analytics
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>Analytics writes
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>App Distribution
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>App Indexing invocations
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>Authentication transferred
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>Multiple Network egress
+                </li>
+                <li class="item-features">
+                    <i class="f7-icons primary-price">checkmark</i>Fast premium support system
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Gift section -->
+<div class="container">
+    <div class="gift-section">
+        <div class="d-flex bd-highligh align-items-center">
+            <div class="bd-highlight">
+                <div class="gift-icon">
+                    <i class="f7-icons">gift_fill</i>
+                </div>
+            </div>
+            <div class="bd-highlight">
+                <h4>Generous limits to get started</h4>
+                <p class="mb-0">Our Spark plan is a great place to develop your app for free, whether a hobby project or the next big start-up. You get all the free features (Analytics, the Notifications, Crash Reporting, and so on) and generous amounts of our paid infrastructure features</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Price table -->
+<div class="price-table-section">
+    <div class="container">
+        <div class="price-head">
+            <h2>Compare features Spark and Storm planes</h2>
+        </div>
+        <table class="table table-price">
+            <thead>
+            <tr>
+                <th class="product">
+                    <div class="d-flex bd-highligh align-items-center">
+                        <div class="bd-highlight">
+                            <i class="f7-icons">rectangle_stack_badge_plus</i>
+                        </div>
+                        <div class="bd-highlight">
+                            Cloud Store Service
+                        </div>
+                    </div>
+                </th>
+                <th>Free trial</th>
+                <th>Spark</th>
+                <th>Storm</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-left">Other Authentication services</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Phone Auth - US, Canada, and India</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">A/B Testing</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Analytics</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Stored data</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Network egress</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table table-price">
+            <thead>
+            <tr>
+                <th class="product">
+                    <div class="d-flex bd-highligh align-items-center">
+                        <div class="bd-highlight">
+                            <i class="f7-icons">chat_bubble_text</i>
+                        </div>
+                        <div class="bd-highlight">
+                            Cloud Messaging
+                        </div>
+                    </div>
+                </th>
+                <th>Free trial</th>
+                <th>Spark</th>
+                <th>Storm</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-left">Other Authentication services</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Phone Auth - US, Canada, and India</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">A/B Testing</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Analytics</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Stored data</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Network egress</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table table-price">
+            <thead>
+            <tr>
+                <th class="product">
+                    <div class="d-flex bd-highligh align-items-center">
+                        <div class="bd-highlight">
+                            <i class="f7-icons">chart_pie</i>
+                        </div>
+                        <div class="bd-highlight">
+                            Monitoring
+                        </div>
+                    </div>
+                </th>
+                <th>Free trial</th>
+                <th>Spark</th>
+                <th>Storm</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-left">Other Authentication services</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Phone Auth - US, Canada, and India</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">A/B Testing</td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Analytics</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Stored data</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            <tr>
+                <td class="text-left">Network egress</td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons icon-danger">multiply_circle_fill</i></td>
+                <td><i class="f7-icons success-price">checkmark_alt_circle_fill</i></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- Switch style (go to link) -->
+<div class="fab">
+    <a href="index.html" class="fab__button">
+        <i class="f7-icons">moon_stars_fill</i>
+    </a>
+</div>
+<!-- JS switch plan period -->
+<script>
+    function togglePlane() {
+        const x = document.getElementById("period");
+        if (document.getElementById("period").innerHTML === "/year") {
+            x.innerHTML = "/month";
+        } else {
+            x.innerHTML = "/year";
+        }
+        const y = document.getElementById("period2");
+        const y_a = document.getElementById("amount2");
+        if (y.innerHTML === "/year") {
+            y.innerHTML = "/month";
+            y_a.innerHTML = "10.90";
+        } else {
+            y.innerHTML = "/year";
+            y_a.innerHTML = "100.90";
+        }
+        const z = document.getElementById("period3");
+        const z_a = document.getElementById("amount3");
+        if (z.innerHTML === "/year") {
+            z.innerHTML = "/month";
+            z_a.innerHTML = "87.90";
+        } else {
+            z.innerHTML = "/year";
+            z_a.innerHTML = "870.90";
+        }
+    }
+</script>
+</body>
+</html>
